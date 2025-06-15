@@ -1,5 +1,6 @@
 from rich import print
 import heapq
+import random
 
 def min_cost(cable_lengths):
     if not cable_lengths:
@@ -30,5 +31,8 @@ def min_cost(cable_lengths):
     return total_cost
 
 # Приклад виклику
-cables = [1, 3, 5, 9]
-min_cost(cables)
+cab = [random.randint(1, 50) for _ in range(15)]
+print(cab)
+min_cost(cab)
+# cables = [1, 3, 5, 9]
+# min_cost(cables)
